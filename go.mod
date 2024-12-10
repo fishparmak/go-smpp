@@ -1,9 +1,15 @@
-module github.com/fiorix/go-smpp
+module github.com/fishparmak/go-smpp
 
-go 1.16
+go 1.20
 
 require (
-	github.com/urfave/cli v1.22.5
-	golang.org/x/text v0.3.6
-	golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba
+	github.com/fiorix/go-smpp v0.0.0-20210403173735-2894b96e70ba
+	github.com/urfave/cli v1.22.16
+	golang.org/x/text v0.21.0
+	golang.org/x/time v0.8.0
+)
+
+require (
+	github.com/cpuguy83/go-md2man/v2 v2.0.5 // indirect
+	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 )
