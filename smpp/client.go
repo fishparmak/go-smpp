@@ -7,13 +7,12 @@ package smpp
 import (
 	"context"
 	"crypto/tls"
+	"github.com/fishparmak/go-smpp/smpp/pdu"
+	"github.com/fishparmak/go-smpp/smpp/pdu/pdufield"
 	"io"
 	"math"
 	"sync"
 	"time"
-
-	"github.com/fishparmak/go-smpp/smpp/pdu"
-	"github.com/fishparmak/go-smpp/smpp/pdu/pdufield"
 )
 
 // ConnStatus is an abstract interface for a connection status change.

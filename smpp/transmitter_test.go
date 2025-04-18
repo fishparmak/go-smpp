@@ -152,7 +152,7 @@ func TestLongMessage(t *testing.T) {
 	parts, err := tx.SubmitLongMsg(&ShortMessage{
 		Src:      "root",
 		Dst:      "foobar",
-		Text:     pdutext.Raw("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat nisl enim, vel finibus neque aliquet sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus."),
+		Text:     pdutext.Raw(fmt.Sprintf("Ваш ответ некорректен. Попробуйте снова. %s", "c")),
 		Validity: 10 * time.Minute,
 		Register: pdufield.NoDeliveryReceipt,
 	})
